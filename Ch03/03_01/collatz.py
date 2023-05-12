@@ -1,8 +1,6 @@
 def collatz_step(n):
     """Compute one step in Collatz conjecture"""
-    if n % 2 == 0:
-        return n // 2
-    return n * 3 + 1
+    return n // 2 if n % 2 == 0 else n * 3 + 1
 
 
 if __name__ == '__main__':

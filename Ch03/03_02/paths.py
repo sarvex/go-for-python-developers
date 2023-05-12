@@ -1,8 +1,6 @@
 def split_ext(path):
     i = path.rfind('.')
-    if i == -1:
-        return path, ''
-    return path[:i], path[i:]
+    return (path, '') if i == -1 else (path[:i], path[i:])
 
 
 if __name__ == '__main__':
